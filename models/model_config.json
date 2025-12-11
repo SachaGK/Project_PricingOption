@@ -1,0 +1,29 @@
+{
+  "model_type": "XGBoost",
+  "features": [
+    "UNDERLYING_LAST",
+    "STRIKE",
+    "DTE",
+    "LOG_DTE",
+    "LOG_MONEYNESS",
+    "C_IV"
+  ],
+  "target": "C_LAST",
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_depth": 10,
+    "n_estimators": 500
+  },
+  "best_iteration": 1868,
+  "test_performance": {
+    "MAE": 5.968287175709888,
+    "RMSE": 14.68694107144702,
+    "R2": 0.8730784399580495
+  },
+  "cv_performance": {
+    "MAE_mean": 7.886853329537997,
+    "MAE_std": 0.07973995721993027,
+    "R2_mean": 0.7968112500810223,
+    "R2_std": 0.0074559482543435154
+  }
+}
